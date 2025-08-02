@@ -5,10 +5,12 @@ import JoinRoom from "./JoinRoom";
 
 const Lobby: React.FC<{
   user: string;
+  isConnecting: boolean;
+  connectionError:string;
   onUserChange: (user: string) => void;
   onCreateRoom: (roomName: string) => void;
   onJoinRoom: (roomName: string) => void;
-}> = ({ user, onUserChange, onCreateRoom, onJoinRoom }) => {
+}> = ({ user, onUserChange, onCreateRoom, onJoinRoom, isConnecting, connectionError }) => {
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showJoinModal, setShowJoinModal] = useState(false);
 
