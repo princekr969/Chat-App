@@ -1,11 +1,12 @@
 import './App.css'
+import ChatApp from './pages/ChatApp'
 
 function App() {
 
 
   return (
     <>
-      
+      <ChatApp/>
     </>
   )
 }
